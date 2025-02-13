@@ -1,0 +1,7 @@
+The CSS property `calc()` can sometimes lead to unexpected results if used incorrectly. For example, nesting `calc()` expressions without proper spacing or using different units inconsistently within the same `calc()` expression can cause parsing errors or unexpected behavior. Also, older browsers might not support all the `calc()` features, leading to inconsistencies in rendering across different browsers.  Example of a problematic `calc()` expression:
+```css
+width:calc(100%-20px); /* correct */
+width:calc(100% - 20px); /* correct */
+width:calc(100%- 20px ); /* incorrect spacing */
+width:calc(50% + 10em); /* inconsistent units*/
+```
