@@ -1,0 +1,11 @@
+The following CSS code demonstrates the correct use of the `calc()` function, addressing the issues present in the `bug.css` file:
+```css
+/* Correct usage of calc() */
+width: calc(100% - 20px);
+height: calc(50% + 10px); /* consistent units */
+padding: calc(10px + 5%); /* consistent spacing and mixed units handled correctly */
+
+/* Browser fallback (for older browsers with limited calc() support)*/
+width: 980px; /* Example fallback width */
+/*  Add more browser-specific fallbacks as needed */
+```
